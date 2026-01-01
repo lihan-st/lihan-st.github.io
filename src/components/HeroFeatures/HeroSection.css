@@ -1,0 +1,209 @@
+/* Add by Amy Han in 2025-12-04 */
+
+/* 整个 Hero 区域的外层，拉满页面宽度 */
+.hero-wrapper {
+  /* padding: 3rem 1.5rem 2.5rem; */
+  margin-top: 3rem;
+  transform: translateY(-10px);  /* 上移提升卡片视觉 */
+  padding-top: 1.2rem;
+  width: 100%;
+  /* padding: 7rem 0 6rem; */
+  /* background: radial-gradient(circle at top left, #ffe9d4 0%, #fff8f0 40%, #fffaf5 100%); */
+  background: radial-gradient(circle at top left, #f7ede2 0%, #fff8f0 40%, #fffaf5 100%);
+}
+
+.heroInner {
+  max-width: 1600px;
+}
+/* 中间那张大卡片 */
+.hero-card {
+  max-width: 1100px; /* modify the card length via this variable */
+  margin: 0 auto;
+  padding: 6.0rem 2.25rem;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #ffb680, #e85827);
+  /* background: linear-gradient(135deg, #ffb680, #ff8b3a);#E7631D; */
+  box-shadow: 0 22px 45px rgba(255, 120, 40, 0.3);
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  color: #4b2500;
+}
+
+/* 左右两栏布局 */
+.hero-left,
+.hero-right {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 头像 */
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 26px rgba(146, 64, 14, 0.35);
+  margin-bottom: 1rem;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 姓名 / title */
+.hero-name {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fffaf7;
+  letter-spacing: 0.04em;
+}
+
+.hero-title {
+  font-size: 1.05rem;
+  margin: 0.35rem 0 0.75rem;
+  color: #ffe9d7;
+}
+
+/* 简介文本 */
+.hero-summary {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #4b2500;
+  background: rgba(255, 247, 238, 0.75);
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+}
+
+/* 社交图标行 */
+.hero-social-row {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 0.9rem;
+}
+
+.hero-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff7ef;
+  color: #c34a1a;
+  box-shadow: 0 6px 16px rgba(123, 40, 12, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.hero-icon.github { color: #3b1f0b; }
+/* .hero-icon.youtube { color: #ff432e; } */
+.hero-icon.linkedin { color: #0b6fb4; }
+
+.hero-icon:hover {
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 10px 22px rgba(111, 41, 12, 0.4);
+  background: #fffdf8;
+}
+
+/* 右侧 tag chip */
+.hero-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-chip {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 244, 233, 0.85);
+  color: #5a2c06;
+  border: 1px solid rgba(255, 231, 206, 0.9);
+}
+
+/* 右侧文字高亮 */
+.hero-highlights {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  background: rgba(255, 247, 238, 0.95);
+  border-radius: 16px;
+  padding: 0.9rem 1.1rem;
+  color: #4b2500;
+  margin-bottom: 1rem;
+}
+
+.hero-highlights p {
+  margin: 0.15rem 0;
+}
+
+/* 按钮区 */
+.hero-cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  font-size: 0.95rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 248, 241, 0.9);
+  transition: 0.2s ease;
+}
+
+.hero-cta.primary {
+  background: #4b2500;
+  color: #ffeeda;
+}
+
+.hero-cta.secondary {
+  background: transparent;
+  color: #4b2500;
+  backdrop-filter: blur(4px);
+}
+
+.hero-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(116, 42, 10, 0.4);
+}
+
+/* 响应式：窄屏改为上下结构 */
+@media (max-width: 860px) {
+  .hero-card {
+    flex-direction: column;
+    padding: 2rem 1.6rem;
+  }
+
+  .hero-wrapper {
+    padding-top: 0s.2rem;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-summary {
+    text-align: left;
+  }
+
+  .hero-social-row {
+    justify-content: center;
+  }
+}
+
+
+/* a:link {color:#000000;}      未访问链接 */
+/* a:visited {color:#00FF00;}  已访问链接 */
+/* a:hover {color:#FF00FF;}  鼠标移动到链接上 */
+/* a:active {color:#0000FF;}  鼠标点击时 */
+a:hover {color:#00FF00;;}  /* 鼠标移动到链接上 */
+a:active {color:#FF00FF;}  /* 鼠标点击时 */
+

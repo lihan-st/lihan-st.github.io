@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Website',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'My Tag Line',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -19,8 +19,7 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  // url: 'https://your-docusaurus-site.example.com',
+  // Set the production url of your site here,
   url: 'https://lihan-st.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -52,8 +51,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+         
         },
         blog: {
           showReadingTime: true,
@@ -63,8 +61,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
+          
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -82,25 +80,30 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        disableSwitch: true,  // 不显示深浅色切换按钮
+        respectPrefersColorScheme: false,
       },
+
       navbar: {
-        title: 'My Site',
+        title: 'My Website',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            // sidebarId: 'AboutmeSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'About Me',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/lihan-st',
             label: 'GitHub',
             position: 'right',
           },
@@ -110,10 +113,10 @@ const config = {
         style: 'dark',
         // links: [
         //   {
-        //     title: 'Docs',
+        //     title: 'About Me',
         //     items: [
         //       {
-        //         label: 'Tutorial',
+        //         label: 'My work',
         //         to: '/docs/intro',
         //       },
         //     ],
@@ -122,17 +125,14 @@ const config = {
         //     title: 'Community',
         //     items: [
         //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //         label: 'LinkedIn',
+        //         href: 'https://www.linkedin.com/in/li-han-2a3055162/',
         //       },
         //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/invite/docusaurus',
+        //         label: 'GitHub',
+        //         href: 'https://github.com/lihan-st',
         //       },
-        //       {
-        //         label: 'X',
-        //         href: 'https://x.com/docusaurus',
-        //       },
+              
         //     ],
         //   },
         //   {
@@ -142,14 +142,11 @@ const config = {
         //         label: 'Blog',
         //         to: '/blog',
         //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
+              
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LI HAN. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
