@@ -4,84 +4,257 @@
         <title>My Website Blog</title>
         <link>https://lihan-st.github.io/blog</link>
         <description>My Website Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://lihan-st.github.io/blog/welcome</link>
-            <guid>https://lihan-st.github.io/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer" class="">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer" class="">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
+            <title><![CDATA[E-commerce Web Testing]]></title>
+            <link>https://lihan-st.github.io/blog/ecommerce-web-testing</link>
+            <guid>https://lihan-st.github.io/blog/ecommerce-web-testing</guid>
+            <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Why This Matters in Real E-commerce Systems]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-this-matters-in-real-e-commerce-systems">Why This Matters in Real E-commerce Systems<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#why-this-matters-in-real-e-commerce-systems" class="hash-link" aria-label="Direct link to Why This Matters in Real E-commerce Systems" title="Direct link to Why This Matters in Real E-commerce Systems" translate="no">​</a></h2>
+<p>E-commerce web testing ensures that an online store functions correctly, performs efficiently under real-world usage, remains secure, and delivers a seamless end-user experience. It focuses on validating critical areas such as functionality (search, cart, checkout), performance under load, payment reliability, platform security, cross-browser and cross-device compatibility, accessibility and overall usability.</p>
+<p>In real enterprise platforms, effective and efficient testing is extremely important. It is not only about finding bugs; it also protects business value by ensuring platform stability, preventing revenue leakage, safeguarding user trust, and reducing operational risks, even during peak loads. Additionally, strong automation coverage and continuous integration can help accelerate releases cycles.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="types-of-e-commerce-systems-testing">Types of E-commerce Systems Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#types-of-e-commerce-systems-testing" class="hash-link" aria-label="Direct link to Types of E-commerce Systems Testing" title="Direct link to Types of E-commerce Systems Testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-functional-testing">1. Functional Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#1-functional-testing" class="hash-link" aria-label="Direct link to 1. Functional Testing" title="Direct link to 1. Functional Testing" translate="no">​</a></h3>
+<p>Functional testing ensures that every critical user journey works reliably and consistently across the platform. Instead of simply confirming that features exist, it verifies business logic correctness, workflow stability, data integrity, and a smooth, friction-free end-to-end shopping experience that users can trust.</p>
+<p>In real projects, this typically involves a combination of <strong>unit</strong>, <strong>integration</strong>, <strong>smoke</strong>, <strong>sanity</strong>, <strong>regression</strong>, <strong>UAT</strong>, and <strong>usability validation</strong> to continuously safeguard business-critical workflows throughout continuous delivery and product evolution.</p>
+<p><strong>Key business-critical areas include:</strong></p>
 <ul>
-<li class=""><code>2019-05-30-welcome.md</code></li>
-<li class=""><code>2019-05-30-welcome/index.md</code></li>
+<li class="">Navigation &amp; Search</li>
+<li class="">Product Catalog &amp; Pricing</li>
+<li class="">Shopping Cart behavior &amp; persistence</li>
+<li class="">Checkout flow and address handling</li>
+<li class="">Payment processing &amp; failure recovery</li>
+<li class="">Account management &amp; authentication</li>
+<li class="">Order processing, refunds &amp; history accuracy</li>
 </ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://lihan-st.github.io/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
-            <category>Facebook</category>
-            <category>Hello</category>
-            <category>Docusaurus</category>
+<p>Functional testing is business-driven and risk-based, ensuring <strong>revenue flows remain stable</strong>, <strong>user confidence remains high</strong>, and <strong>platform changes do not break critical operations</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-performance-testing">2. Performance Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#2-performance-testing" class="hash-link" aria-label="Direct link to 2. Performance Testing" title="Direct link to 2. Performance Testing" translate="no">​</a></h3>
+<p>Performance testing ensures the platform remains responsive, scalable, and stable under varying levels of user traffic. For e-commerce platforms, this is essential to prevent page slowdowns, checkout delays, application crashes, and revenue loss during high-traffic periods such as holiday seasons and promotional events.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Page load performance (mobile &amp; desktop)</li>
+<li class="">Concurrency handling</li>
+<li class="">Response time &amp; throughput</li>
+<li class="">Error rate trends under load</li>
+<li class="">Checkout &amp; transaction latency</li>
+<li class="">CDN &amp; caching behavior</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-security-testing">3. Security Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#3-security-testing" class="hash-link" aria-label="Direct link to 3. Security Testing" title="Direct link to 3. Security Testing" translate="no">​</a></h3>
+<p>Security testing ensures the platform is protected against cyber threats and prevents unauthorized access to sensitive data such as user identity, addresses, and payment information. Strong security helps maintain compliance and business credibility.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Authentication security</li>
+<li class="">Password policies &amp; payment security (PCI DSS)</li>
+<li class="">SSL/TLS encryption</li>
+<li class="">Secure sessions &amp; data confidentiality</li>
+<li class="">Data confidentiality, fraud detection, vulnerability scanning</li>
+<li class="">Protection against OWASP Top-10 (XSS, SQL injection, CSRF, broken auth)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-reliability-testing">4. Reliability Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#4-reliability-testing" class="hash-link" aria-label="Direct link to 4. Reliability Testing" title="Direct link to 4. Reliability Testing" translate="no">​</a></h3>
+<p>Reliability testing ensures that the e-commerce platform remains stable and functional under real-world usage conditions. It focuses on consistent performance, minimal failures, recoverability, and stable behavior across long user sessions and repeated operations.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">System stability during prolonged sessions and repeated actions</li>
+<li class="">Behavior consistency across multiple visits and transactions</li>
+<li class="">Failure handling (payment failure, page timeout, partial load recovery)</li>
+<li class="">Graceful degradation during unexpected system issues</li>
+<li class="">Auto-retry and recovery mechanisms</li>
+<li class="">Monitoring and logging validation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-compatibility-testing">5. Compatibility Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#5-compatibility-testing" class="hash-link" aria-label="Direct link to 5. Compatibility Testing" title="Direct link to 5. Compatibility Testing" translate="no">​</a></h3>
+<p>Compatibility testing ensures the platform delivers a consistent experience across multiple browsers, devices, OS versions, and screen resolutions. Since users access stores from Chrome, Safari, Firefox, Edge, Windows, macOS, Android, iOS etc., compatibility directly affects usability and revenue.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Cross-browser behavior (Chrome, Safari, Firefox, Edge)</li>
+<li class="">Cross-device experience (Windows, macOS, Android, iOS)</li>
+<li class="">UI rendering consistency</li>
+<li class="">Functional stability of key workflows</li>
+<li class="">Responsive layout and resolution handling</li>
+<li class="">Stability after browser/OS upgrades</li>
+<li class="">Third-party integrations reliability (payments, chat, analytics, social login)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-accessibility-testing">6. Accessibility Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#6-accessibility-testing" class="hash-link" aria-label="Direct link to 6. Accessibility Testing" title="Direct link to 6. Accessibility Testing" translate="no">​</a></h3>
+<p>Accessibility testing ensures that the e-commerce platform is usable by all users, including people with disabilities, and complies with standards such as WCAG and ADA. It focuses on keyboard navigation, assistive technology support, visual accessibility, and clear content structure. Strong accessibility not only improves inclusiveness but also enhances SEO, user retention, and legal compliance.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Keyboard-only navigation for interactive elements (buttons, menus, forms)</li>
+<li class="">Screen reader support (NVDA, VoiceOver) for correct announcement of page elements</li>
+<li class="">Proper use of semantic HTML, ARIA roles, and labels</li>
+<li class="">Color contrast compliance and readable typography</li>
+<li class="">Accessible error handling and instructions in forms</li>
+<li class="">Focus indicators, skip navigation, and page structure clarity</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-usability-testing">7. Usability Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#7-usability-testing" class="hash-link" aria-label="Direct link to 7. Usability Testing" title="Direct link to 7. Usability Testing" translate="no">​</a></h3>
+<p>Usability testing evaluates how intuitive, efficient, and user-friendly the e-commerce experience is. It focuses on how easily users can browse, find products, complete checkout, and interact with the platform without confusion or friction. Good usability directly impacts conversion rate, customer satisfaction, and retention.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Ease of navigation and logical information architecture</li>
+<li class="">Clear CTA visibility (Add to Cart, Checkout, Login, etc.)</li>
+<li class="">Consistency of UI design, icons, and messaging</li>
+<li class="">Readability of content and clarity of instructions</li>
+<li class="">Error message clarity and guidance to resolution</li>
+<li class="">Support for first-time users and returning customers</li>
+<li class="">Funnel analysis to reduce abandonment in search, cart, and checkout</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-localization--i18n-testing">8. Localization / i18n Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#8-localization--i18n-testing" class="hash-link" aria-label="Direct link to 8. Localization / i18n Testing" title="Direct link to 8. Localization / i18n Testing" translate="no">​</a></h3>
+<p>Localization testing ensures that the e-commerce platform provides a correct and culturally appropriate experience for users across different regions, languages, and currencies. It validates that translated content, currency formats, date / time formats, and localized business rules behave correctly.</p>
+<p><strong>Key areas to test</strong></p>
+<ul>
+<li class="">Language switch behavior and translation accuracy</li>
+<li class="">Right-to-left language support (if applicable)</li>
+<li class="">Currency display and conversion accuracy</li>
+<li class="">Date, time, address, and phone number formats</li>
+<li class="">Region-specific tax and shipping rules</li>
+<li class="">Local payment methods support</li>
+<li class="">Cultural sensitivity and terminology appropriateness</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-essential-test-scenarios">The Essential Test Scenarios<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#the-essential-test-scenarios" class="hash-link" aria-label="Direct link to The Essential Test Scenarios" title="Direct link to The Essential Test Scenarios" translate="no">​</a></h2>
+<p>Below are the must-have e-commerce test features.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-homepage--navigation">1. Homepage &amp; Navigation<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#1-homepage--navigation" class="hash-link" aria-label="Direct link to 1. Homepage &amp; Navigation" title="Direct link to 1. Homepage &amp; Navigation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Homepage load &amp; performance:</strong> Ensure the homepage loads correctly, quickly, and renders all key elements without delay.</li>
+<li class=""><strong>Navigation menu:</strong> Verify that categories, subcategories, and filters are functional, intuitive, and guide users to correct pages.</li>
+<li class=""><strong>Content display:</strong> Validate correct rendering of text, images, banners, and key links such as catalog, login, cart, and account.</li>
+<li class=""><strong>Promotions &amp; banners:</strong> Ensure promotional images auto-scroll as expected, respond to hover/click, and navigate to the correct deals or landing pages.</li>
+<li class=""><strong>Cross-browser &amp; responsiveness:</strong> Confirm proper rendering across different browsers, devices, and screen resolutions.</li>
+<li class=""><strong>Fallback handling:</strong> Ensure a proper fallback or error page is displayed in case of load failures.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-search">2. Search<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#2-search" class="hash-link" aria-label="Direct link to 2. Search" title="Direct link to 2. Search" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Search functionality:</strong> Ensure users can search by keyword, product name, category, or broader criteria.</li>
+<li class=""><strong>Relevant results:</strong> Validate results accuracy and ranking based on relevance.</li>
+<li class=""><strong>Filters &amp; sorting:</strong> Confirm search filters and sorting options (price, rating, brand, etc.) work correctly.</li>
+<li class=""><strong>Pagination / results display:</strong> Verify correct number of items per page and navigation between result pages.</li>
+<li class=""><strong>Search consistency:</strong> Ensure search works across homepage, category pages, and internal search areas.</li>
+<li class=""><strong>Performance:</strong> Validate search speed and ensure no empty/invalid result anomalies.</li>
+<li class=""><strong>Navigation from search:</strong> Confirm users can successfully open product details and related links from results.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-product-pages">3. Product Pages<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#3-product-pages" class="hash-link" aria-label="Direct link to 3. Product Pages" title="Direct link to 3. Product Pages" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Product information:</strong> Ensure accurate display of product name, price, description, availability, and a clearly visible Add to Cart button.</li>
+<li class=""><strong>Images:</strong> Verify image clarity, correct resolution, and responsive gallery/zoom behavior across devices.</li>
+<li class=""><strong>Variants:</strong> Confirm size, color, and style selections correctly update availability, price, and product images.</li>
+<li class=""><strong>Specifications &amp; details:</strong> Validate product specifications, attributes, and key details display correctly without formatting issues.</li>
+<li class=""><strong>Breadcrumb navigation:</strong> Confirm each breadcrumb link works correctly and guides users through category hierarchy.</li>
+<li class=""><strong>Reviews &amp; ratings:</strong> Confirm reviews load properly and display accurate rating information.</li>
+<li class=""><strong>Checkout readiness:</strong> Ensure users can proceed smoothly from the product page to checkout without issues.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-shopping-cart">4. Shopping Cart<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#4-shopping-cart" class="hash-link" aria-label="Direct link to 4. Shopping Cart" title="Direct link to 4. Shopping Cart" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Item addition &amp; removal:</strong> Ensure items can be added and removed smoothly, and the cart list updates correctly.</li>
+<li class=""><strong>Quantity management:</strong> Verify users can increase/decrease quantities and totals recalculate accurately.</li>
+<li class=""><strong>Duplicate items:</strong> Confirm adding the same product increases quantity instead of duplicating entries.</li>
+<li class=""><strong>Price &amp; totals accuracy:</strong> Validate accurate pricing, subtotal, tax, discounts, and shipping fee calculations.</li>
+<li class=""><strong>Cart summary:</strong> Ensure all selected items, quantities, prices, and totals are clearly displayed.</li>
+<li class=""><strong>Coupons &amp; promotions:</strong> Verify discount codes apply correctly and update the total.</li>
+<li class=""><strong>Shipping estimation:</strong> Confirm shipping options and costs calculate correctly based on location.</li>
+<li class=""><strong>Cart persistence:</strong> Ensure cart contents remain after refresh, closing the browser, or logging back in.</li>
+<li class=""><strong>Continue shopping:</strong> Validate users can return to browsing without losing cart contents.</li>
+<li class=""><strong>Checkout readiness:</strong> Confirm users can proceed to checkout successfully from the cart.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-order-processing--post-purchase">5. Order Processing &amp; Post-Purchase<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#5-order-processing--post-purchase" class="hash-link" aria-label="Direct link to 5. Order Processing &amp; Post-Purchase" title="Direct link to 5. Order Processing &amp; Post-Purchase" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Order review:</strong> Validate that order details (items, quantities, prices, address, shipping method) match the user’s selection before confirmation.</li>
+<li class=""><strong>Order confirmation:</strong> Ensure on-screen confirmation and confirmation emails are delivered with correct content and working links.</li>
+<li class=""><strong>My Orders page:</strong> Verify past orders appear with accurate details, status, and available actions (view, reorder, download invoice, etc.).</li>
+<li class=""><strong>Refunds &amp; cancellations:</strong> Simulate order cancellation/returns and confirm refund amounts, status updates, and notifications are correct.</li>
+<li class=""><strong>Shipment tracking:</strong> Check that tracking numbers/links are generated where applicable and lead to up-to-date shipment status.</li>
+<li class=""><strong>Policies visibility:</strong> Ensure return/exchange and shipping policies are clearly accessible before and after checkout.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-checkout-flow">6. Checkout Flow<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#6-checkout-flow" class="hash-link" aria-label="Direct link to 6. Checkout Flow" title="Direct link to 6. Checkout Flow" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Guest checkout:</strong> Verify users can complete checkout without requiring account creation.</li>
+<li class=""><strong>Login during checkout:</strong> Ensure returning users can log in smoothly without losing cart contents.</li>
+<li class=""><strong>Address &amp; shipping:</strong> Validate address selection/editing and ensure correct shipping options are displayed.</li>
+<li class=""><strong>Price breakdown:</strong> Confirm users see accurate totals including product price, tax, discount, and shipping fee.</li>
+<li class=""><strong>Promo codes:</strong> Verify valid coupons apply correctly and invalid codes are handled properly.</li>
+<li class=""><strong>Payment methods:</strong> Ensure users can select from supported payment options and complete transactions successfully.</li>
+<li class=""><strong>Dynamic recalculation:</strong> Validate totals update correctly when quantities, items, or options change.</li>
+<li class=""><strong>Order summary:</strong> Confirm users can review all order details correctly before final purchase.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-payment-gateway">7. Payment Gateway<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#7-payment-gateway" class="hash-link" aria-label="Direct link to 7. Payment Gateway" title="Direct link to 7. Payment Gateway" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Valid &amp; invalid payments:</strong> Simulate successful and failed transactions (expired cards, incorrect CVV, insufficient funds, weak network, cancellation).</li>
+<li class=""><strong>Multiple payment options:</strong> Verify credit card, PayPal, gift cards, currency conversion, and supported regional methods.</li>
+<li class=""><strong>Guest vs returning users:</strong> Ensure smooth checkout for guests and login redirect for returning customers when required.</li>
+<li class=""><strong>Security &amp; compliance:</strong> Mask/encrypt card data, enforce PCI compliance, and validate OTP where applicable.</li>
+<li class=""><strong>Timeout &amp; session handling:</strong> Ensure users are logged out after inactivity and session resumes safely when expected.</li>
+<li class=""><strong>Order confirmation:</strong> Verify on-screen confirmation and email/SMS receipt with correct order ID.</li>
+<li class=""><strong>System integration:</strong> Ensure seamless integration with external payment gateways and consistent behavior under different network conditions.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-user-account">8. User Account<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#8-user-account" class="hash-link" aria-label="Direct link to 8. User Account" title="Direct link to 8. User Account" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Registration:</strong> Validate new account creation with valid/invalid data; ensure required fields and error handling work correctly.</li>
+<li class=""><strong>Login / Logout:</strong> Verify valid/invalid credentials, error messages, session handling, “Remember Me”, and multi-browser login behavior.</li>
+<li class=""><strong>Password management:</strong> Test Forgot Password, Reset Password, password masking, and successful login with new credentials.</li>
+<li class=""><strong>Profile management:</strong> Ensure users can view &amp; update addresses, personal info, payment methods, and preferences successfully.</li>
+<li class=""><strong>Account state handling:</strong> Redirect returning users appropriately, enforce session timeout, and ensure secure authentication flow.</li>
+<li class=""><strong>Wishlist / Favorites:</strong> Confirm users can save items and that selections persist across sessions and devices.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="automation-strategy-in-e-commerce-testing">Automation Strategy in E-commerce Testing<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#automation-strategy-in-e-commerce-testing" class="hash-link" aria-label="Direct link to Automation Strategy in E-commerce Testing" title="Direct link to Automation Strategy in E-commerce Testing" translate="no">​</a></h2>
+<p>Automation plays a critical role in maintaining quality and release velocity in large e-commerce platforms.</p>
+<p><strong>Typical automation focus areas</strong></p>
+<ul>
+<li class="">UI Automation (Playwright / Selenium) for checkout, cart, login, search, payments</li>
+<li class="">API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services</li>
+<li class="">Performance Automation using JMeter / Locust</li>
+<li class="">Integration into CI/CD (Jenkins / GitHub Actions) for continous quality</li>
+</ul>
+<p>Automation is not about automating everything; it's about automating the <strong>right high-value, repeatable, business-critical flows</strong> while keeping maitenance cost sustainable. Priority areas for automation typically include high-frequency workflows (login, signup, cart, checkout), revenue-critical APIs, and performance baselines.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="risk-based--business-driven-testing-mindset">Risk-Based &amp; Business-Driven Testing Mindset<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#risk-based--business-driven-testing-mindset" class="hash-link" aria-label="Direct link to Risk-Based &amp; Business-Driven Testing Mindset" title="Direct link to Risk-Based &amp; Business-Driven Testing Mindset" translate="no">​</a></h2>
+<p>Testing priorities should be determined by <strong>business risk and revenue impact</strong>:</p>
+<p><strong>Highest risk areas</strong></p>
+<ul>
+<li class="">Checkout</li>
+<li class="">Payments</li>
+<li class="">Cart</li>
+<li class="">Login</li>
+<li class="">Order Processing</li>
+</ul>
+<p><strong>Medium risk</strong></p>
+<ul>
+<li class="">Search relevance</li>
+<li class="">Product display</li>
+</ul>
+<p><strong>Lower risk</strong></p>
+<ul>
+<li class="">Visual polish</li>
+<li class="">Minor secondary features</li>
+</ul>
+<p>This ensures testing effort always protects business value first. Risk prioritization is aligned with business impact, customer experience impact, and failure probability.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="production-quality-monitoring">Production Quality Monitoring<a href="https://lihan-st.github.io/blog/ecommerce-web-testing#production-quality-monitoring" class="hash-link" aria-label="Direct link to Production Quality Monitoring" title="Direct link to Production Quality Monitoring" translate="no">​</a></h2>
+<p>Quality ownership does not stop at deployment. Continuous production monitoring is essential.</p>
+<p><strong>Key monitoring areas</strong></p>
+<ul>
+<li class="">Checkout drop-offs</li>
+<li class="">Payment failures</li>
+<li class="">API error spikes</li>
+<li class="">Slow response alerts</li>
+<li class="">Crash / exception trends</li>
+<li class="">Real user performance metrics</li>
+</ul>
+<p>Tools may include New Relic, Grafana, Elastic, Datadog, or APM dashboards. Proactive monitoring allows early detection and fast recovery. This supports a shift-right testing mindset, where quality ownership continues
+after deployment instead of ending at release.</p>]]></content:encoded>
+            <category>Learning</category>
         </item>
         <item>
-            <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://lihan-st.github.io/blog/mdx-blog-post</link>
-            <guid>https://lihan-st.github.io/blog/mdx-blog-post</guid>
-            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
-            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer" class="">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer" class="">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
-<button>Click me!</button>]]></content:encoded>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://lihan-st.github.io/blog/long-blog-post</link>
-            <guid>https://lihan-st.github.io/blog/long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://lihan-st.github.io/blog/first-blog-post</link>
-            <guid>https://lihan-st.github.io/blog/first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
-            <category>Docusaurus</category>
+            <title><![CDATA[Mountain]]></title>
+            <link>https://lihan-st.github.io/blog/mountain</link>
+            <guid>https://lihan-st.github.io/blog/mountain</guid>
+            <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Image of a mountain]]></description>
+            <content:encoded><![CDATA[<p>Image of a mountain</p>
+<p><img decoding="async" loading="lazy" alt="Mountain" src="https://lihan-st.github.io/assets/images/mountain-52acc0a18bd38d3e2406e46d3e6d35e0.jpeg" width="275" height="183" class="img_ev3q"></p>]]></content:encoded>
+            <category>Tutorial</category>
         </item>
     </channel>
 </rss>
