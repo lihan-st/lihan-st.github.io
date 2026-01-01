@@ -5,8 +5,12 @@
 import React from 'react';
 import './HeroSection.css';
 import Link from '@docusaurus/Link';
+import useBaseUrl  from '@docusaurus/useBaseUrl';
+
 
 export default function HeroSection() {
+  const githubIcon = useBaseUrl('/img/github-16.svg');
+  const linkedinIcon = useBaseUrl('/img/linkedin-16.svg');
   return (
     <section className="hero-wrapper">
       <div className="hero-card">
@@ -28,20 +32,24 @@ export default function HeroSection() {
           <div className="hero-social-row">
             <a
               href="https://github.com/lihan-st"
-              className="hero-icon github"
+              className="hero-social-circle"
+              aria-label="GitHub"
               target="_blank"
               rel="noreferrer"
-            >
-              <i className="fab fa-github"></i>
+            > 
+              <img src={githubIcon} alt="GitHub" className="hero-social-icon-img" />
+              {/* <i className="fab fa-github"></i> */}
             </a>
            
             <a
               href="https://www.linkedin.com/in/li-han-2a3055162/"
-              className="hero-icon linkedin"
+              className="hero-social-circle"
+              aria-label="LinkedIn"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-linkedin"></i>
+              <img src={linkedinIcon} alt="LinkedIn" className="hero-social-icon-img" />
+              {/* <i className="fab fa-linkedin"></i> */}
             </a>
           </div>
         </div>

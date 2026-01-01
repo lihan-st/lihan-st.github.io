@@ -207,3 +207,20 @@
 a:hover {color:#00FF00;;}  /* 鼠标移动到链接上 */
 a:active {color:#FF00FF;}  /* 鼠标点击时 */
 
+.hero-social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #fff7ed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 30px rgba(146, 64, 14, 0.25);
+  margin-right: 24px;
+}
+
+.hero-social-icon-img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
