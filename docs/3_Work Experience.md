@@ -1,14 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 tags: [work experience]
 image: assets/img/website_screenshot.png
 ---
 
 <!-- # Work Experience   -->
-The part summaries li han's work experience.
 
 <div class="img-small" > ![SES](./img/SES.png)</div>
-### *HIL Test Engineer*
+### *Hil Test Engineer*
 *Shanghai, CN*  
 *Sept. 2022 – Oct. 2024*  
  

@@ -91,7 +91,7 @@ const config = {
         title: 'My Website',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.jpg',
         },
         items: [
           {

@@ -22,11 +22,12 @@ export default function HeroSection() {
           </div>
 
           <h1 className="hero-name">Li Han</h1>
-          <h2 className="hero-title">Software Validation Engineer </h2>
+          <h2 className="hero-title">Software Test Engineer </h2>
 
           <p className="hero-summary">
-            I love building reliable test automation, beautiful documentation,
-            and data-driven research projects — with a warm, human touch.
+            I design and validate reliable software systems — from safety-critical
+            embedded systems to web and API applications — with a strong focus on automation,
+            test design, continuous integration, and clear documentation.
           </p>
 
           <div className="hero-social-row">
@@ -57,23 +58,26 @@ export default function HeroSection() {
         {/* 右栏：高亮信息卡 */}
         <div className="hero-right">
           <div className="hero-chip-row">
-            <span className="hero-chip">🚗 Automotive HIL & QA</span>
-            <span className="hero-chip">🌧️ ML for Weather & Remote Sensing</span>
-            <span className="hero-chip">📚 Technical Writing & LaTeX</span>
+            <span className="hero-chip">🚗 Automative Embeded Software QA & HIL</span>
+            <span className="hero-chip">🌐 Web & API Test</span>
+            <span className="hero-chip">🤖 Python, Playwright, Pytest</span>
+            <span className="hero-chip">✍️ Technical documentation & Test Design</span>
           </div>
 
           <div className="hero-highlights">
             <p>
-              • 8+ years in software validation, automation test, and CANoe + VT System
-              workflows, focusing on BMS / body electronics.
+              • 8+ years of hands-on experience in embeded software testing, 
+              including system validation, test automation, and test design.
             </p>
             <p>
-              • Building reproducible Python / ML pipelines for precipitation prediction
-              and remote sensing research.
+              • Strong background in automation test frameworks design and implementation.
             </p>
             <p>
-              • Passionate about clear documentation, teaching, and making complex
-              systems feel friendly and approachable.
+              • Currently expanding expertise in Web and API testing, with a focus on Python and Playwright.  
+            </p>
+            <p>
+              • Passionate about clear test design, documentation, and building reliable test 
+              automation that improves both product quality and team efficiency.
             </p>
           </div>
 

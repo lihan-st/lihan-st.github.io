@@ -5,8 +5,6 @@ tags: [education]
 
 # Education
 
-This page summaries li han's education background.
-
 <div class="img-small" > ![Harbin Engineering University](./img/harbin.png)</div> 
 ## Master of Engineering
 ### Harbin Engineering University

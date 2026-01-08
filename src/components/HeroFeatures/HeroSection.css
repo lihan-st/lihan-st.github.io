@@ -17,9 +17,13 @@
 }
 /* 中间那张大卡片 */
 .hero-card {
-  max-width: 1100px; /* modify the card length via this variable */
+  max-width: 1200px; /* modify the card length via this variable */
   margin: 0 auto;
-  padding: 6.0rem 2.25rem;
+  /* padding: 3.2rem 2.25rem; */
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
   border-radius: 26px;
   background: linear-gradient(135deg, #ffb680, #e85827);
   /* background: linear-gradient(135deg, #ffb680, #ff8b3a);#E7631D; */
@@ -77,6 +81,15 @@
   background: rgba(255, 247, 238, 0.75);
   padding: 0.6rem 0.9rem;
   border-radius: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: normal;
+  word-break: normal;
+  max-width: 58ch;
+  line-height: 1.6;
+  
 }
 
 /* 社交图标行 */
@@ -137,10 +150,22 @@
   padding: 0.9rem 1.1rem;
   color: #4b2500;
   margin-bottom: 1rem;
+  max-width: 62ch; /* try 58–70ch */
 }
 
 .hero-highlights p {
   margin: 0.15rem 0;
+  text-align: justify;
+  text-justify: inter-word;
+
+  /* helps avoid ugly huge gaps */
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-break: normal;
+  overflow-wrap: normal;
+
+  /* optional: make last line not stretched */
+  text-align-last: left;
 }
 
 /* 按钮区 */
