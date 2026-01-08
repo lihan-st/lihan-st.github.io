@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[2340],{3158:s=>{s.exports=JSON.parse('{"tag":{"label":"projects","permalink":"/docs/tags/projects","allTagsPath":"/docs/tags","count":1,"items":[{"id":"Projects","title":"Projects","description":"HIL Automation Commissioning","permalink":"/docs/Projects"}],"unlisted":false}}')}}]);
