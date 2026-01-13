@@ -1,104 +1,102 @@
-/* Add by Amy Han in 2025-12-04 */
 
-/* 整个 Hero 区域的外层，拉满页面宽度 */
+/* Hero area */
 .hero-wrapper {
-  /* padding: 3rem 1.5rem 2.5rem; */
-  margin-top: 3rem;
-  transform: translateY(-10px);  /* 上移提升卡片视觉 */
-  padding-top: 1.2rem;
+  /* width: 96%; */
+  /* margin: 0 auto; */
+  /* padding: 0; */ 
+  width: min(1200px, 92%);  
+  /* width: 100%; */
+  margin: 56px auto 0;
+  padding-top: var(--ifm-navbar-height);
+  padding-bottom: 0;     
+  background: linear-gradient(
+    180deg,
+    #ffb680 0%,
+    #f58b5b 45%, 
+    #e85827 100%
+  );
+  position: relative;   
+  overflow: hidden;    
+}
+.hero-container {
   width: 100%;
-  /* padding: 7rem 0 6rem; */
-  /* background: radial-gradient(circle at top left, #ffe9d4 0%, #fff8f0 40%, #fffaf5 100%); */
-  background: radial-gradient(circle at top left, #f7ede2 0%, #fff8f0 40%, #fffaf5 100%);
-}
-
-.heroInner {
-  max-width: 1600px;
-}
-/* 中间那张大卡片 */
-.hero-card {
-  max-width: 1200px; /* modify the card length via this variable */
   margin: 0 auto;
-  /* padding: 3.2rem 2.25rem; */
-  padding-top: 3.2rem;
-  padding-bottom: 3.2rem;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-  border-radius: 26px;
-  background: linear-gradient(135deg, #ffb680, #e85827);
-  /* background: linear-gradient(135deg, #ffb680, #ff8b3a);#E7631D; */
-  box-shadow: 0 22px 45px rgba(255, 120, 40, 0.3);
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  color: #4b2500;
+  padding: 0 32px;
 }
+.heroInner {
+  max-width: 980px;
+}
+/* hero card */
+.hero-card {
+  max-width: 100%;
+  margin: 56px auto 0;     
+  padding: 3.2rem 2.5rem 140px;
 
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
 /* 左右两栏布局 */
 .hero-left,
 .hero-right {
   flex: 1;
   min-width: 0;
 }
-
+/* 左侧整列都居中 */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* 水平居中 */
+  text-align: center;   /* 文本居中 */
+}
+/* h1居中 */
+.hero-name {
+  width: 100%;
+  text-align: center;
+}
 /* 头像 */
 .hero-avatar {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 999px;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 26px rgba(146, 64, 14, 0.35);
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
-
 .hero-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 22%;
+  border-radius: 50%;
 }
-
-/* 姓名 / title */
+/* name / title */
 .hero-name {
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   margin: 0;
   color: #fffaf7;
   letter-spacing: 0.04em;
+  /* align-items: center;
+  text-align: center; */
 }
-
 .hero-title {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin: 0.35rem 0 0.75rem;
   color: #ffe9d7;
 }
-
-/* 简介文本 */
-.hero-summary {
-  font-size: 0.98rem;
-  line-height: 1.6;
-  color: #4b2500;
-  background: rgba(255, 247, 238, 0.75);
-  padding: 0.6rem 0.9rem;
-  border-radius: 12px;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  overflow-wrap: normal;
-  word-break: normal;
-  max-width: 58ch;
-  line-height: 1.6;
-  
-}
-
 /* 社交图标行 */
 .hero-social-row {
   display: flex;
   gap: 0.9rem;
   margin-top: 0.9rem;
 }
-
 .hero-icon {
   width: 38px;
   height: 38px;
@@ -113,68 +111,54 @@
   text-decoration: none;
   font-size: 1.1rem;
 }
-
 .hero-icon.github { color: #3b1f0b; }
 /* .hero-icon.youtube { color: #ff432e; } */
 .hero-icon.linkedin { color: #0b6fb4; }
-
 .hero-icon:hover {
   transform: translateY(-2px) scale(1.07);
   box-shadow: 0 10px 22px rgba(111, 41, 12, 0.4);
   background: #fffdf8;
 }
-
-/* 右侧 tag chip */
-.hero-chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-chip {
-  font-size: 0.82rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(255, 244, 233, 0.85);
-  color: #5a2c06;
-  border: 1px solid rgba(255, 231, 206, 0.9);
-}
-
 /* 右侧文字高亮 */
 .hero-highlights {
-  font-size: 0.96rem;
-  line-height: 1.7;
-  background: rgba(255, 247, 238, 0.95);
-  border-radius: 16px;
-  padding: 0.9rem 1.1rem;
-  color: #4b2500;
-  margin-bottom: 1rem;
-  max-width: 62ch; /* try 58–70ch */
-}
+  font-size: 18px;
+  line-height: 1.75;
 
+  background: rgba(255, 249, 243, 0.92);
+  border-radius: 18px;
+  /* 边框更明显 */
+  border: 3px solid rgba(255, 231, 206, 0.95);
+  /* 让它更“长”（更大更舒展） */
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  max-width: 760px; /* 你想更长就调大，如 820px */
+  color: #4b2500;
+  margin-bottom: 1.1rem;
+}
 .hero-highlights p {
-  margin: 0.15rem 0;
+  /* margin: 0.15rem 0; */
+  margin: 0 0 16px 0;
   text-align: justify;
   text-justify: inter-word;
-
   /* helps avoid ugly huge gaps */
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  word-break: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+
+  word-break:keep-all;
   overflow-wrap: normal;
+  word-wrap: normal;
 
   /* optional: make last line not stretched */
   text-align-last: left;
 }
-
 /* 按钮区 */
 .hero-cta-row {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  /* justify-content: center; */
 }
-
 .hero-cta {
   font-size: 0.95rem;
   padding: 0.55rem 1.4rem;
@@ -183,32 +167,31 @@
   border: 1px solid rgba(255, 248, 241, 0.9);
   transition: 0.2s ease;
 }
-
 .hero-cta.primary {
   background: #4b2500;
   color: #ffeeda;
 }
-
 .hero-cta.secondary {
   background: transparent;
   color: #4b2500;
   backdrop-filter: blur(4px);
 }
-
 .hero-cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(116, 42, 10, 0.4);
 }
-
 /* 响应式：窄屏改为上下结构 */
 @media (max-width: 860px) {
-  .hero-card {
-    flex-direction: column;
-    padding: 2rem 1.6rem;
+  .hero-wrapper{
+    padding-top: calc(var(--ifm-navbar-height) + 16px);
   }
-
-  .hero-wrapper {
-    padding-top: 0s.2rem;
+  .hero-container{
+    padding: 0 16px;  /* 小屏别太大 */
+  }
+  .hero-card{
+    margin-top: 24px;
+    padding: 2rem 1.2rem 120px;
+    grid-template-columns: 1fr; 
   }
 
   .hero-left {
@@ -223,15 +206,8 @@
     justify-content: center;
   }
 }
-
-
-/* a:link {color:#000000;}      未访问链接 */
-/* a:visited {color:#00FF00;}  已访问链接 */
-/* a:hover {color:#FF00FF;}  鼠标移动到链接上 */
-/* a:active {color:#0000FF;}  鼠标点击时 */
 a:hover {color:#00FF00;;}  /* 鼠标移动到链接上 */
 a:active {color:#FF00FF;}  /* 鼠标点击时 */
-
 .hero-social-circle {
   width: 40px;
   height: 40px;
@@ -243,9 +219,54 @@ a:active {color:#FF00FF;}  /* 鼠标点击时 */
   box-shadow: 0 14px 30px rgba(146, 64, 14, 0.25);
   margin-right: 24px;
 }
-
 .hero-social-icon-img {
   width: 50px;
   height: 50px;
   display: block;
+}
+/* .hero-wrapper-wave{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100vw;         
+  height: 120px;        
+  display: block;
+  pointer-events: none;
+  z-index: 1;           
+}
+.hero-wrapper-wave path{
+  fill: #fff3ea;        
+}
+
+.hero-card{
+  position: relative;
+  z-index: 2;
+} */
+
+.hero-wrapper-wave{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  display: block;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-wrapper-wave path{
+  fill: #fff3ea;  /* 上下背景色（你底部那块浅色） */
+}
+
+/* 底部 */
+.hero-wrapper-wave--bottom{
+  bottom: -1px;
+}
+
+/* 顶部：放到 top 并翻转 */
+.hero-wrapper-wave--top{
+  top: -1px;
+  transform: rotate(180deg);
+  transform-origin: center;
 }

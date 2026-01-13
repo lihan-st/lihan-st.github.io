@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Reliable Validation',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_pair-programming_9jyg.svg').default,
     description: (
       <>
         I validate software with an engineering mindset - structured tests,
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on Automation',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/undraw_nature_yf30.svg').default,
     description: (
       <>
         Building scalable UI and API automation with Python, Playwright, 
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by Continuous Learning',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_omega_aj2q.svg').default,
     description: (
       <>
         I write clear, friendly documentation and test notes that make systems easier 

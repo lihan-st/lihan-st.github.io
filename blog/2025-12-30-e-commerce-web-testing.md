@@ -5,10 +5,13 @@ authors: lihan
 tags: [learning]
 
 ---
+
 ## Why This Matters in Real E-commerce Systems
 E-commerce web testing ensures that an online store functions correctly, performs efficiently under real-world usage, remains secure, and delivers a seamless end-user experience. It focuses on validating critical areas such as functionality (search, cart, checkout), performance under load, payment reliability, platform security, cross-browser and cross-device compatibility, accessibility and overall usability.
 
 In real enterprise platforms, effective and efficient testing is extremely important. It is not only about finding bugs; it also protects business value by ensuring platform stability, preventing revenue leakage, safeguarding user trust, and reducing operational risks, even during peak loads. Additionally, strong automation coverage and continuous integration can help accelerate releases cycles.
+
+<!-- truncate -->
 
 ---
 ## Types of E-commerce Systems Testing

@@ -1,0 +1,197 @@
+:root{
+  --accent: #b4532a;     /* 你的主卡棕橙强调色 */
+  --bg: #f6e3d5;         /* 主卡同系背景 */
+  --text: #121417;
+}
+
+.section{
+  background: var(--bg);
+  padding: 72px 0 90px;
+}
+
+.container{
+  width: min(1150px, 92vw);
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: var(--text);
+}
+
+.underline{
+  width: 160px;
+  height: 6px;
+  background: var(--accent);
+  margin: 18px auto 0;
+  border-radius: 999px;
+}
+
+.list{
+  margin-top: 56px;
+  display: grid;
+  gap: 56px;
+}
+
+.project{
+  width: 100%;
+}
+
+/* 整体“截图 + 卡片”容器 */
+.mediaWrap{
+  position: relative;
+  min-height: 420px;
+}
+
+/* 背景截图块 */
+.bgShot{
+  width: 60%;
+  height: 450px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  background: rgba(180,83,42,0.08);
+  position: relative;
+}
+
+.bgImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.92;
+}
+
+/* ✅ 蓝色遮罩层：默认盖在图片上 → 看起来是蓝色 */
+.bgShot::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply; /* 可选：让蓝更自然融入图片 */
+  background: rgba(245, 102, 36, 0.55);
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+/* ✅ hover 时遮罩消失 → 图片恢复正常颜色 */
+.project:hover .bgShot::after{
+  opacity: 0;
+}
+/* 右侧叠上来的白色卡片 */
+.card{
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 54%;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 28px 22px;
+  /* box-shadow: 0 26px 70px rgba(0,0,0,0.14); */
+  box-shadow: -14px 18px 44px rgba(25, 20, 15, 0.12);
+}
+/* ✅ 交错布局：第二、第四…（idx=1,3,5...）把卡片放左侧，背景图放右侧 */
+.alt .bgShot{
+  margin-left: auto;   /* 把背景截图块推到右侧 */
+}
+
+.alt .card{
+  left: 0;             /* 卡片改为左侧叠上来 */
+  right: auto;
+  box-shadow: 14px 18px 44px rgba(25, 20, 15, 0.12);
+}
+
+
+.no{
+  font-size: 20px;
+  color: var(--accent);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.cardTitle{
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.desc{
+  margin: 16px 0 18px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(0,0,0,0.72);
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.tag{
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: rgba(180,83,42,0.10);
+  color: rgba(0,0,0,0.72);
+  border: 1px solid rgba(180,83,42,0.18);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.links{
+  display: flex;
+  gap: 10px;
+}
+
+.linkBtn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  text-decoration: none;
+  color: rgba(0,0,0,0.74);
+  font-weight: 700;
+}
+
+.linkBtn:hover{
+  border-color: rgba(180,83,42,0.40);
+  color: var(--accent);
+}
+
+/* 分隔 */
+.divider{
+  margin-top: 48px;
+  height: 1px;
+  background: rgba(0,0,0,0.10);
+}
+
+/* 响应式：手机端改成上下堆叠 */
+@media (max-width: 900px){
+  .title{ font-size: 44px; }
+  .mediaWrap{ min-height: auto; }
+  .bgShot{ width: 100%; height: 260px; }
+  .card{
+    position: static;
+    width: 100%;
+    margin-top: 18px;
+  }
+  .cardTitle{ font-size: 26px; }
+}
+
+/* 左侧背景截图容器：一定要有高度/比例 */
+.mediaWrap {
+  position: relative;
+}
+

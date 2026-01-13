@@ -1,0 +1,168 @@
+:root{
+  --accent: #b4532a;   
+}
+.section {
+  background: #fff3ea;         
+  padding: 72px 0 90px;
+}
+.container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #121417;
+}
+.underline {
+  width: 140px;
+  height: 6px;
+  background: var(--accent);;           
+  margin: 18px auto 0;
+  border-radius: 999px;
+}
+.grid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+/* Left tabs column */
+.left {
+  border-right: 3px solid rgba(0, 0, 0, 0.08);
+  padding-right: 22px;
+}
+.tab {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 16px 10px 16px 18px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-left: 4px solid transparent; 
+  color: #111;
+}
+.tabLine {
+  font-size: 18px;
+  line-height: 0.6;
+  letter-spacing: 6px;
+  font-weight: 500;          /* 让整体字重更稳定 */
+  font-family: inherit;      /* 强制继承同一字体 */
+  text-transform: none;
+}
+.tabLineLong{
+  letter-spacing: 2px;       
+  line-height: 1.15;
+}
+.active {
+  border-left-color: var(--accent);
+  color: var(--accent);
+}
+/* Right content */
+.right {
+  padding-top: 10px;
+}
+.roleTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #121417;
+}
+.metaRow {
+  margin-top: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* .badge {
+  background: rgba(180,83,42,0.14);
+  color: var(--accent);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+} */
+.badge{
+  display: inline-flex;      /* 不占满整行，按内容宽度撑开 */
+  width: fit-content;        /* 宽度随内容 */
+  max-width: 100%;           /* 防止极端长文本溢出 */
+  align-items: center;
+
+  padding: 10px 18px;        /* 背景块的“边框”厚度 */
+  border-radius: 14px;
+
+  background: rgba(180, 92, 52, 0.18); /* 主色的浅色版本，可按需调整 */
+  color: #B45C34;            /* badge 字色 */
+  font-weight: 300;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+
+  white-space: nowrap;       /* 默认不换行：保持一条 badge */
+}
+.date {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.bullets {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 18px;
+}
+.bulletItem {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 14px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.75);
+}
+.chev {
+  color: var(--accent);
+  font-weight: 800;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .title { font-size: 44px; }
+  .grid { grid-template-columns: 1fr; gap: 28px; }
+  .left { border-right: none; padding-right: 0; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 16px; }
+  .tabLine { font-size: 18px; letter-spacing: 3px; }
+}
+.companyRow {
+  margin-top: 14px;
+}
+.companyPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(180,83,42,0.14);
+  color: var(--accent);
+
+  padding: 12px 18px;
+  border-radius: 18px;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px; 
+}
+.companyLogo{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.location {
+  margin-top: 12px;
+  font-size: 18px;          
+  color: rgba(0,0,0,0.8);
+}

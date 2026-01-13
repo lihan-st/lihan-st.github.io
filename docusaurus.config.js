@@ -47,12 +47,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+        docs: false,
+        // {
+        //   sidebarPath: './sidebars.js',
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
          
-        },
+        // },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -88,20 +89,19 @@ const config = {
       },
 
       navbar: {
-        title: 'My Website',
+        title: 'Website',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.jpg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            // sidebarId: 'AboutmeSidebar',
-            position: 'left',
-            label: 'About Me',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'About Me',
+          // },
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/lihan-st',
             label: 'GitHub',
@@ -146,7 +146,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} LI HAN. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Li Han. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
