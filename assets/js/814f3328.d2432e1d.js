@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"E-commerce Web Testing","permalink":"/blog/e-commerce-web-testing","unlisted":false,"date":"2025-12-30T00:00:00.000Z"}]}')}}]);
