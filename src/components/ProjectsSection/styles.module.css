@@ -41,13 +41,11 @@
   width: 100%;
 }
 
-/* 整体“截图 + 卡片”容器 */
 .mediaWrap{
   position: relative;
   min-height: 420px;
 }
 
-/* 背景截图块 */
 .bgShot{
   width: 60%;
   height: 450px;
@@ -66,18 +64,17 @@
   opacity: 0.92;
 }
 
-/* ✅ 蓝色遮罩层：默认盖在图片上 → 看起来是蓝色 */
 .bgShot::after{
   content: "";
   position: absolute;
   inset: 0;
-  mix-blend-mode: multiply; /* 可选：让蓝更自然融入图片 */
+  mix-blend-mode: multiply; 
   background: rgba(245, 102, 36, 0.55);
   transition: opacity 220ms ease;
   pointer-events: none;
 }
 
-/* ✅ hover 时遮罩消失 → 图片恢复正常颜色 */
+/* hover 时遮罩消失, 图片恢复正常颜色 */
 .project:hover .bgShot::after{
   opacity: 0;
 }
@@ -93,7 +90,7 @@
   /* box-shadow: 0 26px 70px rgba(0,0,0,0.14); */
   box-shadow: -14px 18px 44px rgba(25, 20, 15, 0.12);
 }
-/* ✅ 交错布局：第二、第四…（idx=1,3,5...）把卡片放左侧，背景图放右侧 */
+/* 交错布局 */
 .alt .bgShot{
   margin-left: auto;   /* 把背景截图块推到右侧 */
 }
@@ -103,7 +100,6 @@
   right: auto;
   box-shadow: 14px 18px 44px rgba(25, 20, 15, 0.12);
 }
-
 
 .no{
   font-size: 20px;
@@ -144,7 +140,7 @@
   border-radius: 10px;
   font-size: 13px;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
 }
 
@@ -190,7 +186,7 @@
   .cardTitle{ font-size: 26px; }
 }
 
-/* 左侧背景截图容器：一定要有高度/比例 */
+/* 左侧背景截图容器 */
 .mediaWrap {
   position: relative;
 }

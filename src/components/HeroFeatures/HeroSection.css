@@ -126,12 +126,11 @@
 
   background: rgba(255, 249, 243, 0.92);
   border-radius: 18px;
-  /* 边框更明显 */
   border: 3px solid rgba(255, 231, 206, 0.95);
-  /* 让它更“长”（更大更舒展） */
+  
   padding: 1.25rem 1.5rem;
   width: 100%;
-  max-width: 760px; /* 你想更长就调大，如 820px */
+  max-width: 760px; 
   color: #4b2500;
   margin-bottom: 1.1rem;
 }
@@ -167,11 +166,11 @@
   border: 1px solid rgba(255, 248, 241, 0.9);
   transition: 0.2s ease;
 }
-.hero-cta.primary {
+.hero-cta.secondary {
   background: #4b2500;
   color: #ffeeda;
 }
-.hero-cta.secondary {
+.hero-cta.primary {
   background: transparent;
   color: #4b2500;
   backdrop-filter: blur(4px);
@@ -186,7 +185,7 @@
     padding-top: calc(var(--ifm-navbar-height) + 16px);
   }
   .hero-container{
-    padding: 0 16px;  /* 小屏别太大 */
+    padding: 0 16px;  /* 小屏 */
   }
   .hero-card{
     margin-top: 24px;
@@ -256,7 +255,8 @@ a:active {color:#FF00FF;}  /* 鼠标点击时 */
 }
 
 .hero-wrapper-wave path{
-  fill: #fff3ea;  /* 上下背景色（你底部那块浅色） */
+  /* fill: #fff3ea;  */
+  fill: #fff7ef;
 }
 
 /* 底部 */

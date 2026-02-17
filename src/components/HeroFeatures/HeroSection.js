@@ -49,28 +49,32 @@ export default function HeroSection() {
           <div className="hero-highlights">
             <p>
               With +8 years of experience in automotive embedded software validation,
-              I specialize in reliable test automation, root-cause analysis, and system-level debugging.
+              I specialize in reliable test automation, root-cause analysis, troubleshooting, and system-level debugging.
             </p>
             <p>
-              Currently, I'm expanding into Web UI and API testing with Python and Playwright - bringing
-              the same engineering rigor, clear test design, and CI-ready automation to software teams.
+              Actively expanding capacities into Web UI and API testing through self-directed learning and hands-on practice.
+              Bringing the same engineering rigor, clear test design, and CI-ready automation to software teams.
             </p>
             <p>
               I'm passionate about building maintable automation frameworks and high-quality test documentation
-              that improve product quality and team efficiency.
+              that improve software quality and team efficiency.
+            </p>
+            <p>
+              My Skillset: Python, Playwright, PyTest, Selenium, Postman, Git, GitHub, Jira, Confluence,
+              Hardware-in-the-loop(HIL), CANoe, CANalyzer, Simulink, Vector VT, CAPL, vTestStudio, DOORS, etc.
             </p>
           </div>
           <div className="hero-cta-row">
-            <a className="hero-cta primary" href="#experience">
-              View Experience
-            </a>
-            <a
-              className="hero-cta secondary"
+            {/* <a
+              className="hero-cta primary"
               href="/resume/LiHan_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               My Resume
+            </a> */}
+            <a className="hero-cta secondary" href="#experience">
+              View Experience
             </a>
           </div>
         </div>

@@ -2,57 +2,56 @@ import React from "react";
 import styles from "./styles.module.css";
 
 const PROJECTS = [
+  // {
+  //   id: "p1",
+  //   no: "01.",
+  //   title: "Web UI Automation — Playwright",
+  //   desc: "WebUI automation using Playwright and PyTest, following POM design and CI-ready execution.",
+  //   tags: ["Playwright", "PyTest", "POM", "GitHub Actions"],
+  //   image: "/img/projects/automationexercise.png", 
+  //   links: [
+  //     { type: "github", href: "https://github.com/your/repo" },
+  //   ],
+  // },
+  // {
+  //   id: "p2",
+  //   no: "02.",
+  //   title: "API Testing & CI Integration",
+  //   desc: "REST API testing with PyTest/Postman, integrated into GitHub Actions for regression coverage.",
+  //   tags: ["REST", "PyTest", "Postman", "CI"],
+  //   image: "/img/projects/api.png",
+  //   links: [{ type: "github", href: "https://github.com/your/repo2" }],
+  // },
   {
     id: "p1",
     no: "01.",
-    title: "Web UI Automation — Playwright",
-    desc: "End-to-end UI automation using Playwright and PyTest, following POM design and CI-ready execution.",
-    tags: ["Playwright", "PyTest", "POM", "GitHub Actions"],
-    image: "/img/projects/automationexercise.png", 
-    links: [
-      { type: "github", href: "https://github.com/your/repo" },
-    ],
-  },
-  {
-    id: "p2",
-    no: "02.",
-    title: "API Testing & CI Integration",
-    desc: "REST API testing with PyTest/Postman, integrated into GitHub Actions for regression coverage.",
-    tags: ["REST", "PyTest", "Postman", "CI"],
-    image: "/img/projects/api.png",
-    links: [{ type: "github", href: "https://github.com/your/repo2" }],
-  },
-  {
-    id: "p3",
-    no: "03.",
     title: "HIL Automation Testing System",
-    desc: "This system integrated with hardware and software subsystems is used for embedded software automation testing with high performance.",
-    tags: ["HIL", "Automation", "CANoe", "CAPL", "Python","Simulink"],
+    desc: "This system integrated with hardware and software subsystems is used for embedded software system-level functional and regression automation testing with high performance.",
+    tags: ["Hardware-in-the-loop(HIL)", "Automation", "CANoe", "CAPL", "Python","Simulink"],
     image: "/img/projects/hil.png",
 
   },
     {
-    id: "p4",
-    no: "04.",
-    title: "BMS Software Testing",
-    desc: "Functional and fault-injection validation for BMS software with HIL system.",
-    tags: ["Embedded Software", "CANoe", "JIRA", "CAPL", "CANalyze"],
+    id: "p2",
+    no: "02.",
+    title: "Embeded Software Battery Management System(BMS) Testing",
+    desc: "System-level functional, fault-injection and regression automation & manualtesting for BMS software with HIL system.",
+    tags: ["Embedded Software", "CANoe", "JIRA", "CAPL", "CANalyze", "HIL","DOORS","vTestStudio"],
     image: "/img/projects/bms.png",
   },
     {
-    id: "p5",
-    no: "05.",
-    title: "EPS Software Testing",
-    desc: "Application-level validation and automated regression testing for EPS software using Vector VT system.",
-    tags: ["Embedded Software", "VT System", "vTestStudio", "DOORS", "CAPL"],
+    id: "p3",
+    no: "03.",
+    title: "Embeded Software Electrical Power System(EPS) Testing",
+    desc: "Application-level automated validation and regression testing for EPS software using Vector VT system.",
+    tags: ["Embedded Software", "VT System", "vTestStudio", "IBM Rational Change Manager", "CAPL"],
     image: "/img/projects/eps.png",             
   },
 ];
 
 function LinkIcon({ type }) {
-  // 不依赖任何第三方 icon 包，避免你额外装库
   if (type === "github") return "GitHub";
-  if (type === "live") return "Live";
+  // if (type === "live") return "Live";
   return "Link";
 }
 
@@ -102,7 +101,7 @@ export default function ProjectsSection() {
                 </div>
               </div>
 
-              {/* 下方分隔线（如果你想每个项目有间距更明显） */}
+              {/* 下方分隔线 */}
               {idx !== PROJECTS.length - 1 && <div className={styles.divider} />}
             </article>
           ))}

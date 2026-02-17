@@ -31,18 +31,18 @@ In real projects, this typically involves a combination of **unit**, **integrati
 
 Functional testing is business-driven and risk-based, ensuring **revenue flows remain stable**, **user confidence remains high**, and **platform changes do not break critical operations**.
 
-### Performance Testing
-Performance testing ensures the platform remains responsive, scalable, and stable under varying levels of user traffic. For e-commerce platforms, this is essential to prevent page slowdowns, checkout delays, application crashes, and revenue loss during high-traffic periods such as holiday seasons and promotional events.
+<!-- ### Performance Testing
+Performance testing ensures the platform remains responsive, scalable, and stable under varying levels of user traffic. For e-commerce platforms, this is essential to prevent page slowdowns, checkout delays, application crashes, and revenue loss during high-traffic periods such as holiday seasons and promotional events. -->
 
-**Key areas to test**
+<!-- **Key areas to test**
 - Page load performance (mobile & desktop)
 - Concurrency handling
 - Response time & throughput
 - Error rate trends under load
 - Checkout & transaction latency
-- CDN & caching behavior 
+- CDN & caching behavior  -->
 
-### Security Testing
+<!-- ### Security Testing
 Security testing ensures the platform is protected against cyber threats and prevents unauthorized access to sensitive data such as user identity, addresses, and payment information. Strong security helps maintain compliance and business credibility.
 
 **Key areas to test**
@@ -51,9 +51,9 @@ Security testing ensures the platform is protected against cyber threats and pre
 - SSL/TLS encryption
 - Secure sessions & data confidentiality
 - Data confidentiality, fraud detection, vulnerability scanning
-- Protection against OWASP Top-10 (XSS, SQL injection, CSRF, broken auth)
+- Protection against OWASP Top-10 (XSS, SQL injection, CSRF, broken auth) -->
 
-### Reliability Testing
+<!-- ### Reliability Testing
 Reliability testing ensures that the e-commerce platform remains stable and functional under real-world usage conditions. It focuses on consistent performance, minimal failures, recoverability, and stable behavior across long user sessions and repeated operations.
 
 **Key areas to test**
@@ -62,9 +62,9 @@ Reliability testing ensures that the e-commerce platform remains stable and func
 - Failure handling (payment failure, page timeout, partial load recovery)
 - Graceful degradation during unexpected system issues
 - Auto-retry and recovery mechanisms
-- Monitoring and logging validation
+- Monitoring and logging validation -->
 
-### Compatibility Testing
+<!-- ### Compatibility Testing
 Compatibility testing ensures the platform delivers a consistent experience across multiple browsers, devices, OS versions, and screen resolutions. Since users access stores from Chrome, Safari, Firefox, Edge, Windows, macOS, Android, iOS etc., compatibility directly affects usability and revenue.
 
 **Key areas to test**
@@ -74,9 +74,9 @@ Compatibility testing ensures the platform delivers a consistent experience acro
 - Functional stability of key workflows
 - Responsive layout and resolution handling
 - Stability after browser/OS upgrades
-- Third-party integrations reliability (payments, chat, analytics, social login)
+- Third-party integrations reliability (payments, chat, analytics, social login) -->
 
-### Accessibility Testing
+<!-- ### Accessibility Testing
 Accessibility testing ensures that the e-commerce platform is usable by all users, including people with disabilities, and complies with standards such as Web Content Accessibility Guidelines （WCAG） and ADA. It focuses on keyboard navigation, assistive technology support, visual accessibility, and clear content structure. Strong accessibility not only improves inclusiveness but also enhances SEO, user retention, and legal compliance.
 
 **Key areas to test**
@@ -85,9 +85,9 @@ Accessibility testing ensures that the e-commerce platform is usable by all user
 - Proper use of semantic HTML, ARIA roles, and labels
 - Color contrast compliance and readable typography
 - Accessible error handling and instructions in forms
-- Focus indicators, skip navigation, and page structure clarity
+- Focus indicators, skip navigation, and page structure clarity -->
 
-### Usability Testing
+<!-- ### Usability Testing
 Usability testing evaluates how intuitive, efficient, and user-friendly the e-commerce experience is. It focuses on how easily users can browse, find products, complete checkout, and interact with the platform without confusion or friction. Good usability directly impacts conversion rate, customer satisfaction, and retention.
 
 **Key areas to test**
@@ -97,9 +97,9 @@ Usability testing evaluates how intuitive, efficient, and user-friendly the e-co
 - Readability of content and clarity of instructions
 - Error message clarity and guidance to resolution
 - Support for first-time users and returning customers
-- Funnel analysis to reduce abandonment in search, cart, and checkout
+- Funnel analysis to reduce abandonment in search, cart, and checkout -->
 
-### Localization / i18n Testing
+<!-- ### Localization / i18n Testing
 Localization testing ensures that the e-commerce platform provides a correct and culturally appropriate experience for users across different regions, languages, and currencies. It validates that translated content, currency formats, date / time formats, and localized business rules behave correctly.
 
 **Key areas to test**
@@ -109,7 +109,7 @@ Localization testing ensures that the e-commerce platform provides a correct and
 - Date, time, address, and phone number formats
 - Region-specific tax and shipping rules
 - Local payment methods support
-- Cultural sensitivity and terminology appropriateness
+- Cultural sensitivity and terminology appropriateness -->
 
 ---
 
@@ -193,15 +193,15 @@ Below are the must-have e-commerce test features.
 Automation plays a critical role in maintaining quality and release velocity in large e-commerce platforms.
 
 **Typical automation focus areas**
-- UI Automation (Playwright / Selenium) for checkout, cart, login, search, payments
-- API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services
-- Performance Automation using JMeter / Locust
-- Integration into CI/CD (Jenkins / GitHub Actions) for continous quality
+- UI Automation (Playwright / Selenium) for checkout, cart, login, search, payments.
+- API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services.
+- Performance Automation using JMeter / Locust.
+- Integration into CI/CD (Jenkins / GitHub Actions) for continous quality.
 
 Automation is not about automating everything; it's about automating the **right high-value, repeatable, business-critical flows** while keeping maitenance cost sustainable. Priority areas for automation typically include high-frequency workflows (login, signup, cart, checkout), revenue-critical APIs, and performance baselines.
 
----
-## Risk-Based & Business-Driven Testing Mindset
+<!-- --- -->
+<!-- ## Risk-Based & Business-Driven Testing Mindset
 Testing priorities should be determined by **business risk and revenue impact**:
 
 **Highest risk areas**
@@ -233,8 +233,7 @@ Quality ownership does not stop at deployment. Continuous production monitoring 
 - Crash / exception trends
 - Real user performance metrics
 
-Tools may include New Relic, Grafana, Elastic, Datadog, or APM dashboards. Proactive monitoring allows early detection and fast recovery. This supports a shift-right testing mindset, where quality ownership continues
-after deployment instead of ending at release.
+Tools may include New Relic, Grafana, Elastic, Datadog, or APM dashboards. Proactive monitoring allows early detection and fast recovery. This supports a shift-right testing mindset, where quality ownership continues after deployment instead of ending at release. -->
 
 
 

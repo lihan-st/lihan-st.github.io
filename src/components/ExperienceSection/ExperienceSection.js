@@ -11,11 +11,12 @@ const DATA = [
     companyLogo: "/img/companies/SES.png",
     date: "Sept. 2022 – Oct. 2024",
     bullets: [
-      "HIL automation system commissioning and setup",
-      "Embedded software functional and regression validation",
-      "Automation using CANoe,vTESTstudio, CAPL, and Python",
-      "Root cause analysis and anomaly tracking",
-      "Cross-functional collaboration with software teams",
+      "HIL automationsystem commissioning, setup and system debugging.",
+      "Embedded software system-levelfunctional and regression validation.",
+      "Test cases and test plans development and test reports generation.",
+      "Automated test framework setup using CANoe, vTESTstudio, CAPL, and Python.",
+      "Root cause analysis, troubleshooting and anomaly tracking.",
+      "Cross-functional collaboration with software teams to ensure software quality.",
     ],
   },
   {
@@ -27,10 +28,10 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Oct. 2021 – Sept. 2022",
     bullets: [
-      "Planned and executed requirements-based ECU software validation and DVP&R activities",
-      "Set up and maintained Vector VT system automation environments",
-      "Performed defect analysis ",
-      "Ensured test traceability and reporting across test tools",
+      "Set up and maintained Vector VT automation system.",
+      "Reviewed and decomposed requrements, designed system-level test scenarios.",
+      "Performed functional and fault injection testing, created and tracked issues.",
+      "Ensured test traceability and reporting across test tools.",
     ],
   },
   {
@@ -42,11 +43,10 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Aug. 2019 – Sept. 2021",
     bullets: [
-      "Validated embedded software EPS features through functional testing",
-      "Executed requirements-based testing, DVP&R planning, and fault injection",
-      "Maintained regression test suites and analyzed system-level defects",
-      "Produced validation reports with full requirements traceability",
-      "Collaborated closely with software teams to resolve system-level issues",
+      "Validated embedded software EPS features through functional testing.",
+      "Executed automated testing, DVP&R planning and produced validation reports.",
+      "Maintained regression test suites, tracked and analyzed anomalies.",
+      "Led and managed software validation projects and collaborated closely with cross-functional teams.",
     ],
   },
   {
@@ -58,8 +58,8 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Mar. 2018 – Aug. 2019",
     bullets: [
-      "HIL system commissioning and setup",
-      "Analyzed requirements and designed system-level test scenarios",
+      "HIL system commissioning and setup.",
+      "Analyzed requirements and designed system-level functional test cases.",
     ],
   },
   {
@@ -71,9 +71,10 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Apr. 2016 – Feb. 2018",
     bullets: [
-      "Executed functional and regression testing for automotive ECU software",
-      "Analyzed defects and supported issue resolution across test cycles",
-      "Maintained test documentation and requirements traceability",
+      "Mannaged and analyzed softwarere quirements and designed system-level test scenarios.",
+      "Executed functional, fault injection, and regression testing for BMS software.",
+      "Analyzed defects and supported issues resolution across test cycles.",
+      "Produced test documentation and requirements traceability.",
     ],
   },
   {
@@ -85,8 +86,8 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Sept. 2013 - Mar. 2016",
     bullets: [
-      "Gained the hands-on experience of solving complex problems",
-      "Formed a deep understanding of the real-world applications of embedded systems",
+      "Gained the hands-on experience of solving complex problems.",
+      "Formed a deep understanding of the real-world applications of software.",
     ],
   },
    {
@@ -98,8 +99,8 @@ const DATA = [
     // badge: "EMBEDDED SYSTEMS",
     date: "Sept. 2008 – Jul. 2012",
     bullets: [
-      "Gained knowledge about fundamentals of the fields of computer science and engineering",
-      "Learned the basic knowledge of programming laguages such as C/C++ and hardware anylysis",
+      "Learned the basic knowledge of programming laguages such as C / Matlab.",
+      "Gained knowledge about fundamentals of the fields of computer science and engineering.",
     ],
   },
 ];
