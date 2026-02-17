@@ -122,9 +122,9 @@
 <p><strong>Typical automation focus areas</strong></p>
 <ul>
 <li class="">UI Automation (Playwright / Selenium) for checkout, cart, login, search, payments.</li>
-<li class="">API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services.</li>
-<li class="">Performance Automation using JMeter / Locust.</li>
-<li class="">Integration into CI/CD (Jenkins / GitHub Actions) for continous quality.</li>
+<li class="">API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services</li>
+<li class="">Performance Automation using JMeter / Locust</li>
+<li class="">Integration into CI/CD (Jenkins / GitHub Actions) for continous quality</li>
 </ul>
 <p>Automation is not about automating everything; it's about automating the <strong>right high-value, repeatable, business-critical flows</strong> while keeping maitenance cost sustainable. Priority areas for automation typically include high-frequency workflows (login, signup, cart, checkout), revenue-critical APIs, and performance baselines.</p>]]></content>
         <author>
