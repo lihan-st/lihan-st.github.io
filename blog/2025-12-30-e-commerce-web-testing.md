@@ -194,9 +194,9 @@ Automation plays a critical role in maintaining quality and release velocity in 
 
 **Typical automation focus areas**
 - UI Automation (Playwright / Selenium) for checkout, cart, login, search, payments.
-- API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services.
-- Performance Automation using JMeter / Locust.
-- Integration into CI/CD (Jenkins / GitHub Actions) for continous quality.
+- API Automation (Postman / RestAssured) for catalog, orders, pricing, and payment services
+- Performance Automation using JMeter / Locust
+- Integration into CI/CD (Jenkins / GitHub Actions) for continous quality
 
 Automation is not about automating everything; it's about automating the **right high-value, repeatable, business-critical flows** while keeping maitenance cost sustainable. Priority areas for automation typically include high-frequency workflows (login, signup, cart, checkout), revenue-critical APIs, and performance baselines.
 
