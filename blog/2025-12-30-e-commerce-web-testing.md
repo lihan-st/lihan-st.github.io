@@ -175,7 +175,7 @@ Below are the must-have e-commerce test features.
 ### Payment Gateway
 - **Valid & invalid payments:** Simulate successful and failed transactions (expired cards, incorrect CVV, insufficient funds, weak network, cancellation).
 - **Multiple payment options:** Verify credit card, PayPal, gift cards, currency conversion, and supported regional methods.
-- **Guest vs returning users:** Ensure smooth checkout for guests and login redirect for returning customers when required.
+- **Guest & returning users:** Ensure smooth checkout for guests and login redirect for returning customers when required.
 - **Security & compliance:** Mask/encrypt card data, enforce PCI compliance, and validate OTP where applicable.
 - **Timeout & session handling:** Ensure users are logged out after inactivity and session resumes safely when expected.
 - **Order confirmation:** Verify on-screen confirmation and email/SMS receipt with correct order ID.
